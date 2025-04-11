@@ -11,7 +11,7 @@ export default function HandTracker() {
     const [lastPosition, setLastPosition] = useState({ x: 0, y: 0 });
     const [score, setScore] = useState(0);
 
-    // Usamos un "ref" para la generación de objetos, así no estamos actualizando el estado
+    // Usar un ref para la generación de objetos.
     const fallingObjectsRef = useRef<FallingObject[]>([]);
 
     useEffect(() => {
@@ -30,14 +30,14 @@ export default function HandTracker() {
             if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
                 const wrist = results.multiHandLandmarks[0][0]; // Coordenadas de la muñeca
 
-                // Calculamos la posición del cuadrado en función de las coordenadas de la muñeca
+                // Calcular la posición del cuadrado en función de las coordenadas de la muñeca
                 const x = wrist.x * window.innerWidth; // Coordenada X de la muñeca
                 const y = wrist.y * window.innerHeight; // Coordenada Y de la muñeca
 
-                // Invertimos el eje X para que coincida con el movimiento de la mano
+                // Invertir el eje X para que coincida con el movimiento de la mano
                 const reversedX = window.innerWidth - x;
 
-                // Actualizamos la posición de la mano en el estado
+                // Actualizar la posición de la mano en el estado
                 setLastPosition({ x: reversedX, y });
 
                 // Mover el cuadrado con las coordenadas ajustadas
@@ -118,7 +118,7 @@ export default function HandTracker() {
         return () => {
             clearInterval(objectGenerationInterval);
         };
-    }, [lastPosition, score]); // Solo vuelve a ejecutarse cuando cambian lastPosition o score
+    }, [lastPosition, score]); 
 
     return (
         <>
