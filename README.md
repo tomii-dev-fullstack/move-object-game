@@ -18,7 +18,7 @@ Un mini juego interactivo donde usás **tu mano frente a la cámara** para mover
 - **MediaPipe** para el reconocimiento de manos y activación de la cámara.
 ---
 
-## 🚀 Cómo correrlo
+## 🚀 ¿Cómo correrlo?
 
 1. Cloná el repo:
    
