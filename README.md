@@ -9,7 +9,6 @@ Un mini juego interactivo donde usás **tu mano frente a la cámara** para mover
 3. Caen objetos desde la parte superior de la pantalla.
 4. Si el cuadrado toca uno de los objetos... ¡Punto para vos!
 
-> Ideal para perder el tiempo mientras te convencés de que es "experimento con visión computacional".
 
 ---
 
@@ -23,6 +22,6 @@ Un mini juego interactivo donde usás **tu mano frente a la cámara** para mover
 
 1. Cloná el repo:
    
-git clone https://github.com/tomii-dev-fullstack/move-object-game
+   git clone https://github.com/tomii-dev-fullstack/move-object-game
 
-cd move-object-game
+   cd move-object-game
